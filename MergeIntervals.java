@@ -11,7 +11,7 @@ public class Solution {
     public List<Interval> merge(List<Interval> intervals) {
         List<Interval> result = new ArrayList<Interval>();
         boolean[] alreadyAdd = new boolean[intervals.size()];
-        
+        ////
         intervals.sort((i1, i2) -> Integer.compare(i1.start, i2.start));
         
         for(int i = 0; i < intervals.size(); ++i) {
